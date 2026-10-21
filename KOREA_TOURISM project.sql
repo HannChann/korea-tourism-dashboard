@@ -16,7 +16,7 @@ SELECT
 SUM(arrivals) AS grand_total
 FROM korea_tourism.arrivals;
 
--- each countries share of total arrivals (top 10 by volume)
+-- Each countries share of total arrivals (top 10 by volume)
 SELECT 
 country,
 SUM(arrivals) AS total_arrivals, 
@@ -26,10 +26,7 @@ GROUP BY country
 ORDER BY total_arrivals DESC
 LIMIT 10;
 
--- New query: connection test, confirm data is still here
-SELECT COUNT(*) FROM korea_tourism.arrivals;
-
--- New query: total arrivals by month (seasonality patterns across the year)
+-- Total arrivals by month (seasonality patterns across the year)
 SELECT
    month,
    SUM(arrivals) AS total_arrivals
@@ -37,7 +34,7 @@ FROM korea_tourism.arrivals
 GROUP BY month
 ORDER BY month;
 
--- New query: AVG arrivals per month (fair seasonality, cancels uneven days & year counts)
+-- AVG arrivals per month (fair seasonality, cancels uneven days & year counts)
 SELECT 
    month,
    ROUND(AVG(arrivals)) AS avg_arrivals
@@ -45,7 +42,7 @@ FROM korea_tourism.arrivals
 GROUP BY month 
 ORDER BY avg_arrivals DESC;
 
--- New query: (Q2 rescoped): fastest-growing markets by YoY %, with volume for context 
+-- (Q2 rescoped): fastest-growing markets by YoY %, with volume for context 
 SELECT
    country,
    SUM(arrivals) AS total_arrivals, 
