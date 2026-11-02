@@ -45,7 +45,7 @@ I took the role of a junior analyst at the Korea Tourism Organization, asked to 
 | File | What it is |
 | :---- | :---- |
 | README.md | This overview |
-| dashboard.pdf / dashboard.png | The final Power BI dashboard |
+| Korea\_Tourism\_Dashboard.pdf / Korea\_Tourism\_Dashboard.jpeg | The final Power BI dashboard |
 | Korea\_Tourism\_Dashboard.pbix | The editable Power BI file |
 | KOREA\_TOURISM\_project.sql | All SQL analysis queries |
 | korea\_arrivals\_clean.csv | The cleaned dataset |
